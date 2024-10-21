@@ -395,8 +395,8 @@
                             <Run Text="启动参数" />
                             <ui:HyperlinkButton Grid.Row="1"
                                                 Margin="0,0,0,0"
-                                                Command="{Binding OpenGameCommandLineDocumentCommand}"
                                                 Padding="0"
+                                                Command="{Binding OpenGameCommandLineDocumentCommand}"
                                                 Cursor="Hand">
                                 <ui:HyperlinkButton.Content>
                                     <TextBlock FontSize="11" Text="打开文档" />
