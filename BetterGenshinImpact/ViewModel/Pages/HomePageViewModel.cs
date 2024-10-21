@@ -197,7 +197,7 @@ public partial class HomePageViewModel : ObservableObject, INavigationAware, IVi
         Start(hWnd);
     }
 
-    private void Start(IntPtr hWnd)
+    internal void Start(IntPtr hWnd)
     {
         if (!TaskDispatcherEnabled)
         {
