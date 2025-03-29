@@ -12,6 +12,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Threading;
 using BetterGenshinImpact.GameTask.AutoGeniusInvokation.Exception;
 using BetterGenshinImpact.GameTask.Common;
 using BetterGenshinImpact.GameTask.Common.BgiVision;
@@ -301,6 +302,7 @@ public partial class ScriptService : IScriptService
                             TaskControl.Logger.LogInformation("如果你已经在游戏内的其他界面，请自行退出当前界面（ESC），使当前任务能够继续运行！");
                         }
                     }
+                    Thread.Sleep(500);
                 });
             }
         }
