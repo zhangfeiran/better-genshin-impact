@@ -301,8 +301,10 @@ public partial class ScriptService : IScriptService
                             TaskControl.Logger.LogInformation("当前不在游戏主界面，等待进入主界面后执行任务...");
                             TaskControl.Logger.LogInformation("如果你已经在游戏内的其他界面，请自行退出当前界面（ESC），使当前任务能够继续运行！");
                         }
+                        Thread.Sleep(500);
+                        TaskControl.Logger.LogInformation("test666");
                     }
-                    Thread.Sleep(500);
+                    
                 });
             }
         }
